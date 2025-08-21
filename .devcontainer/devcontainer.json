@@ -1,4 +1,4 @@
-{
+/* {
   "name": "sample dev container configuration file",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",  // Or use "dockerFile": "Dockerfile"
   "features": {
@@ -10,15 +10,18 @@
     "terminal.integrated.shell.linux": "/bin/bash"
   },
   "postCreateCommand": "pip install -r requirements.txt"
-}
-{
+} */
+/* {
   "name": "Custom Dev Container",
   "dockerFile": "Dockerfile"
-}
+} */
 {
   "name": "My Codespace",
   "image": "mcr.microsoft.com/devcontainers/universal:latest",
-  "postCreateCommand": "npm install",
+/*  "postCreateCommand": "npm install",
   "postStartCommand": "npm run dev"
 }
     "postCreateCommand": "bash ./scripts/setup.sh"
+{ */
+  "postCreateCommand": "sudo apt-get install rabbitmq-server && pip install celery"
+}
