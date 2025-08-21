@@ -11,3 +11,7 @@
   },
   "postCreateCommand": "pip install -r requirements.txt"
 }
+{
+  "name": "Custom Dev Container",
+  "dockerFile": "Dockerfile"
+}
