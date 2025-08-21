@@ -1,0 +1,13 @@
+{
+  "name": "sample dev container configuration file",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",  // Or use "dockerFile": "Dockerfile"
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "pip install -r requirements.txt"
+}
