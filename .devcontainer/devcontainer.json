@@ -22,6 +22,12 @@
   "postStartCommand": "npm run dev"
 }
     "postCreateCommand": "bash ./scripts/setup.sh"
-{ */
+{ 
   "postCreateCommand": "sudo apt-get install rabbitmq-server && pip install celery"
-}
+} */
+
+        {
+          "image": "mcr.microsoft.com/devcontainers/universal:latest",
+          "postCreateCommand": "sudo apt-get update && sudo apt-get install -y rabbitmq-server",
+          "forwardPorts": [5672, 15672]
+        }
