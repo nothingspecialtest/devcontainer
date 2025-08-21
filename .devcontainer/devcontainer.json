@@ -15,3 +15,10 @@
   "name": "Custom Dev Container",
   "dockerFile": "Dockerfile"
 }
+{
+  "name": "My Codespace",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  "postCreateCommand": "npm install",
+  "postStartCommand": "npm run dev"
+}
+    "postCreateCommand": "bash ./scripts/setup.sh"
